@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobility Lens</string>
+    <string name="app_introduction">Six dimensions separate a phone application from a desktop one. Step through them and check a feature you are designing against each.</string>
+
+    <string name="dimension_position">Dimension %1$d of %2$d</string>
+    <string name="label_constraint">The constraint</string>
+    <string name="label_implication">What it means for you</string>
+
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_check">Check my feature</string>
+
+    <string name="input_section_heading">Apply it to your own work</string>
+    <string name="input_label">Application or feature name</string>
+    <string name="input_placeholder">For example: Receipt Scanner</string>
+
+    <string name="feedback_blank_input">Enter an application or feature name first, then tap the button.</string>
+    <string name="feedback_match">%1$s must be designed for %2$s. Review this dimension before you write the screen.</string>
+
+    <!-- Dimension 1 -->
+    <string name="dimension_input_title">Input and interaction</string>
+    <string name="dimension_input_constraint">Everything happens through an imprecise fingertip on glass. There is no hover, no right click, and the software keyboard covers half the screen the moment it opens. People frequently tap with one thumb while walking or holding something else.</string>
+    <string name="dimension_input_implication">Give every tappable element at least 48dp of touch area, keep the main action inside comfortable thumb reach near the bottom, and replace free typing with pickers, defaults and autofill wherever the value can be guessed.</string>
+
+    <!-- Dimension 2 -->
+    <string name="dimension_screen_title">Screen size, orientation and density</string>
+    <string name="dimension_screen_constraint">The viewport is small, it flips between portrait and landscape without warning, and the same layout has to survive a huge spread of pixel densities, aspect ratios, notches and system bars.</string>
+    <string name="dimension_screen_implication">Express every size in dp and every text size in sp so nothing is pinned to a physical pixel count, let long content scroll instead of assuming it fits, and test at the largest system font scale before calling a layout finished.</string>
+
+    <!-- Dimension 3 -->
+    <string name="dimension_lifecycle_title">Lifecycle and resource constraints</string>
+    <string name="dimension_lifecycle_constraint">The system owns the process, not the developer. A call, a rotation or memory pressure can stop and destroy the screen at any moment, and battery, memory and cellular data are all finite budgets the user pays for.</string>
+    <string name="dimension_lifecycle_implication">Assume the UI can be thrown away and rebuilt at any time, so hold anything worth keeping in saved instance state, a ViewModel or storage. Release cameras, sensors and listeners when the screen stops, and batch network calls instead of polling.</string>
+
+    <!-- Dimension 4 -->
+    <string name="dimension_context_title">Context awareness</string>
+    <string name="dimension_context_constraint">The device travels with the person, so it can sense location, movement, network quality, time of day and nearby devices. A desktop sits in one room and knows almost none of this.</string>
+    <string name="dimension_context_implication">Use context to remove work from the user, such as defaulting to the nearest store or dropping to a cheaper sync path on a weak connection. Treat every signal as unreliable and always leave a manual override when the guess is wrong.</string>
+
+    <!-- Dimension 5 -->
+    <string name="dimension_usage_title">Usage patterns</string>
+    <string name="dimension_usage_constraint">Mobile sessions are short, frequent and interrupted. Someone opens the app for twenty seconds in a queue with divided attention, not for a focused hour at a desk.</string>
+    <string name="dimension_usage_implication">Put the highest value information on the first screen with no setup, make every task resumable from where it was abandoned, and avoid long wizards that lose all progress if the user leaves halfway.</string>
+
+    <!-- Dimension 6 -->
+    <string name="dimension_privacy_title">Security and privacy expectations</string>
+    <string name="dimension_privacy_constraint">A phone carries identity, location history, contacts, photos and payment credentials, it is easy to lose or steal, and its screen is often visible to strangers in public.</string>
+    <string name="dimension_privacy_implication">Request the smallest permission set, ask at the moment the feature is used and explain the reason in plain language. Keep personal data out of logs, store it encrypted, and never assume the person holding the phone is alone.</string>
+</resources>
