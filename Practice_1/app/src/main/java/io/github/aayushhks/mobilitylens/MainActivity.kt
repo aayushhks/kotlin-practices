@@ -54,11 +54,8 @@ class MainActivity : ComponentActivity() {
 }
 
 /**
- * The single screen of the application.
- *
- * Note on state: every value below is held with [remember] rather than
- * rememberSaveable. That is deliberate for this assignment, so the rotation
- * observation shows what is lost when the activity is recreated.
+ * The single screen of the application. Holds the selected dimension, the
+ * user's input and the feedback message as Compose state.
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
