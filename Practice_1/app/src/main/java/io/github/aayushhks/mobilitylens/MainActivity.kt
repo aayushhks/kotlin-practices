@@ -152,6 +152,7 @@ fun MobilityLensScreen(modifier: Modifier = Modifier) {
                 onValueChange = {
                     designNameInput = it
                     isInputInvalid = false
+                    feedbackMessage = ""
                 },
                 label = { Text(stringResource(R.string.input_label)) },
                 placeholder = { Text(stringResource(R.string.input_placeholder)) },
