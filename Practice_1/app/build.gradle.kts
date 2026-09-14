@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "io.github.aayushhks.mobilitylens"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "io.github.aayushhks.mobilitylens"
         minSdk = 27
         targetSdk = 36
         versionCode = 1

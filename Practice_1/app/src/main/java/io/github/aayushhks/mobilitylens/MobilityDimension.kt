@@ -1,4 +1,4 @@
-package com.example.myapplication
+package io.github.aayushhks.mobilitylens
 
 import androidx.annotation.StringRes
 

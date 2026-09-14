@@ -1,4 +1,4 @@
-package com.example.myapplication
+package io.github.aayushhks.mobilitylens
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -39,14 +39,14 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.myapplication.ui.theme.MyApplicationTheme
+import io.github.aayushhks.mobilitylens.ui.theme.MobilityLensTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContent {
-            MyApplicationTheme {
+            MobilityLensTheme {
                 MobilityLensScreen()
             }
         }
@@ -258,7 +258,7 @@ private fun LabelledParagraph(label: String, body: String, modifier: Modifier = 
 @Preview(showBackground = true, name = "Mobility Lens - light")
 @Composable
 private fun MobilityLensScreenPreview() {
-    MyApplicationTheme {
+    MobilityLensTheme {
         MobilityLensScreen()
     }
 }
@@ -270,7 +270,7 @@ private fun MobilityLensScreenPreview() {
 )
 @Composable
 private fun MobilityLensScreenDarkPreview() {
-    MyApplicationTheme {
+    MobilityLensTheme {
         MobilityLensScreen()
     }
 }
