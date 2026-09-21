@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Focus Plan Builder</string>
+
+    <string name="screen_title">Focus Plan Builder</string>
+    <string name="screen_instructions">Enter what you are studying and how many minutes you have. The app will suggest a session type and a break to match.</string>
+
+    <string name="label_subject">Study subject</string>
+    <string name="placeholder_subject">For example: Compose State</string>
+    <string name="label_minutes">Available minutes</string>
+    <string name="placeholder_minutes">45</string>
+
+    <string name="hint_minutes_range">Enter a whole number from 10 to 180.</string>
+    <string name="error_minutes_range">That is not a number between 10 and 180.</string>
+
+    <string name="action_create_plan">Create plan</string>
+
+    <string name="card_label_duration">Duration</string>
+    <string name="card_label_category">Category</string>
+    <string name="card_label_break">Recommended break</string>
+    <string name="card_value_minutes">%1$d minutes</string>
+    <string name="card_summary">Study %1$s for %2$d minutes, and then take a %3$d-minute break.</string>
+</resources>
