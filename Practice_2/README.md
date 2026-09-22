@@ -66,3 +66,9 @@ read that value, and the button recomposes with a new `enabled` value.
 variable resets on every recomposition, and `remember` survives recomposition but
 not the Activity being recreated. `rememberSaveable` saves to the instance state
 bundle, so both text fields are still filled in after the emulator rotates.
+
+## Generative AI assistance
+
+I used Claude to understand the arguments and documentation for unfamiliar Kotlin
+and Jetpack Compose functions used in this project. ChatGPT helped review the
+code and README against the assignment requirements and word this disclosure.
