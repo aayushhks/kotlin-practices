@@ -59,3 +59,9 @@ that call `navigate` or `popBackStack`.
 It names an action (`ACTION_SEND`) and a type (`text/plain`) but no component.
 Android finds every app that can handle it, and `Intent.createChooser()` lets the
 user pick one.
+
+## AI Disclosure
+
+I used AI assistance to help me understand Kotlin Serialization, Espresso Intents,
+and UI Automator, including their use in type-safe navigation, share-intent
+testing, and rotation testing.
