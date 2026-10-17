@@ -4,4 +4,16 @@
     <string name="search_label">Search events</string>
     <string name="clear_search">Clear search</string>
     <string name="no_results">No events match \"%1$s\"</string>
+
+    <string name="detail_title">Event details</string>
+    <string name="navigate_up">Navigate up</string>
+    <string name="label_category">Category</string>
+    <string name="label_time">Date and time</string>
+    <string name="label_location">Location</string>
+    <string name="label_about">About this event</string>
+    <string name="share_event">Share event</string>
+
+    <string name="event_unavailable">Event unavailable</string>
+    <string name="event_unavailable_body">This event could not be found. It may have been removed or the link is out of date.</string>
+    <string name="return_to_events">Return to events</string>
 </resources>
