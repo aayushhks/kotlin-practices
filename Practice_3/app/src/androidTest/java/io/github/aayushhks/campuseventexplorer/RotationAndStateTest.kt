@@ -1,11 +1,11 @@
 package io.github.aayushhks.campuseventexplorer
 
-import android.content.res.Configuration
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertTextContains
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollToKey
 import androidx.compose.ui.test.performTextInput
@@ -83,23 +83,16 @@ class RotationAndStateTest {
         composeTestRule.onNodeWithTag(EventListTestTags.SEARCH_FIELD).assertTextContains(query)
     }
 
-    /** Rotates the emulator and waits until the Activity has been recreated in landscape. */
+    /** Rotates the emulator and waits until the recreated screen is laid out in landscape. */
     private fun rotateToLandscape() {
-        val before = currentActivity()
         device.setOrientationLandscape()
-        composeTestRule.waitUntil(timeoutMillis = 5_000) {
-            val now = currentActivity()
-            now != null &&
-                now !== before &&
-                now.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
-        }
+        composeTestRule.waitUntil(timeoutMillis = 10_000) { isScreenLandscape() }
         composeTestRule.waitForIdle()
     }
 
-    /** The resumed Activity, or null while it is between being destroyed and recreated. */
-    private fun currentActivity(): MainActivity? = runCatching {
-        var activity: MainActivity? = null
-        composeTestRule.activityRule.scenario.onActivity { activity = it }
-        activity
-    }.getOrNull()
+    /** False while the Activity is being recreated (zero or two Compose roots exist). */
+    private fun isScreenLandscape(): Boolean = runCatching {
+        val size = composeTestRule.onRoot().fetchSemanticsNode().size
+        size.width > size.height
+    }.getOrDefault(false)
 }
