@@ -62,6 +62,6 @@ user pick one.
 
 ## AI Disclosure
 
-I used AI assistance to help me understand Kotlin Serialization, Espresso Intents,
+I used ChatGPT to help me understand some libraries like Kotlin Serialization, Espresso Intents,
 and UI Automator, including their use in type-safe navigation, share-intent
 testing, and rotation testing.
