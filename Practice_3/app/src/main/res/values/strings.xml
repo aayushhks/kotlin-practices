@@ -12,6 +12,7 @@
     <string name="label_location">Location</string>
     <string name="label_about">About this event</string>
     <string name="share_event">Share event</string>
+    <string name="share_chooser_title">Share event via</string>
 
     <string name="event_unavailable">Event unavailable</string>
     <string name="event_unavailable_body">This event could not be found. It may have been removed or the link is out of date.</string>

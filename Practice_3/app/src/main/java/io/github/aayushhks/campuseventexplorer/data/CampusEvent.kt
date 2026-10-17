@@ -10,6 +10,9 @@ data class CampusEvent(
     val description: String,
 )
 
+/** Text sent to other apps, e.g. "Mobile Development Meetup — Tue, Oct 20, 6:30 PM — CAS 214". */
+fun CampusEvent.shareText(): String = "$title — $time — $location"
+
 /**
  * Returns the events whose title or category contains [query], ignoring case.
  * A blank query returns every event. The result is always computed from the
